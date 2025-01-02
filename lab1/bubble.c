@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include "../utils.h"
+
 
 void bubble_sort(int data[], const int size) {
-  for (int i = 0; i < size - 1; i++) {
     int changed = 0;
+  for (int i = 0; i < size - 1; i++) {
     for (int j = 0; j < size - i - 1; j++) {
       if (data[j] > data[j + 1]) {
         const int temp = data[j];
@@ -23,18 +25,12 @@ int main(void) {
   const int data_length = sizeof(data) / sizeof(data[0]);
 
   printf("unsorted: ");
-  for (int i = 0; i < data_length; i++) {
-    printf("%d ", data[i]);
-  }
-  printf("\n");
-
-  bubble_sort(data, data_length);
+  print_array(data, data_length);
+  
+  bubble_sort((int * )data, data_length);
 
   printf("sorted: ");
-  for (int i = 0; i < data_length; i++) {
-    printf("%d ", data[i]);
-  }
-  printf("\n");
+  print_array(data, data_length);
 
   puts("Code ran by Aashutosh Pudasaini!");
 }

@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int linear_search(const int numbers[], const int numbers_length, const int element);
 
 int main(void) {
