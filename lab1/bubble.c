@@ -22,6 +22,7 @@ void bubble_sort(int data[], const int size) {
 
 int main(void) {
   const int data[] = {41, 2, 1, 34, 5, 3, 45, 2, 3, 422, 9};
+  
   const int data_length = sizeof(data) / sizeof(data[0]);
 
   printf("unsorted: ");
