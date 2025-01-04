@@ -32,6 +32,6 @@ int main(void) {
 
   printf("sorted: ");
   print_array(data, data_length);
+  print_credit();
 
-  puts("Code ran by Aashutosh Pudasaini!");
 }

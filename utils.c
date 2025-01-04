@@ -6,3 +6,7 @@ void print_array(const int array[], const int array_size){
     }
     puts("\n");
 }
+
+void print_credit(){
+    printf("Program ran by Aashutosh Pudasaini - 1202\n");
+}
