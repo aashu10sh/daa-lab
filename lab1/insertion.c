@@ -4,5 +4,8 @@
 
 int main(void){
     printf("Insertion Sort!");
+
+
+    print_credit();
     return 0;
 }
