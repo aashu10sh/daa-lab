@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "../utils.h"
 
 int linear_search(const int numbers[], const int numbers_length,
                   const int element);
@@ -17,6 +18,8 @@ int main(void) {
   } else {
     printf("Not Found Element %d \n", to_find);
   }
+  print_credit();
+
 }
 
 int linear_search(const int numbers[], const int numbers_length,

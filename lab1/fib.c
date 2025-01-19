@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "../utils.h"
 
 int fib(int n) {
   if (n <= 0)
@@ -17,5 +18,6 @@ int fib(int n) {
 int main(void) {
   const int answer = fib(21);
   printf("The Solution is %d \n", answer);
+  print_credit();
   return 0;
 }

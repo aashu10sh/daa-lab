@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "../utils.h"
 
 int gcd(int a, int b) {
 
@@ -18,5 +19,6 @@ int gcd(int a, int b) {
 int main(void) {
   const int answer = gcd(21, 7);
   printf("The Solution is %d \n", answer);
+  print_credit();
   return 0;
 }
