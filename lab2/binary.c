@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "../utils.h";
+#include "../utils.h"
 
 int binary_search(const int array[], const int left, const int right, const int to_find){
     if ( left > right ){
@@ -26,12 +26,15 @@ int main(void){
 
     const int index = binary_search(array, 0, array_length - 1 , 7);
 
+    printf("array: ");
+    print_array(array, array_length);
+
     if (index == -1){
         printf("failed to find! \n");
         return 0;
     }
 
-    printf("found: %d\n",index);
+    printf("found at index: %d\n",index);
 
     print_credit();
     return 0;
