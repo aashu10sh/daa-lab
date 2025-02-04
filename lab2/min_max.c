@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include "utils.h"
 
 void min_max(const int array[], int left, int right, int *min, int *max){
     
@@ -46,6 +47,9 @@ int main(void){
 
     printf("Min: %d\n",min);
     printf("Max: %d\n",max);
+
+    print_credit();
+
 
     return 0;
 }
