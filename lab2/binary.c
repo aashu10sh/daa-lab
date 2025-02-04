@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include "../utils.h";
 
 int binary_search(const int array[], const int left, const int right, const int to_find){
     if ( left > right ){
@@ -31,6 +32,8 @@ int main(void){
     }
 
     printf("found: %d\n",index);
+
+    print_credit();
     return 0;
 }
 
