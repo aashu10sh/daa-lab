@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "utils.h"
+#include "../utils.h"
 
 void min_max(const int array[], int left, int right, int *min, int *max){
     
