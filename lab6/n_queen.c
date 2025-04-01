@@ -33,7 +33,7 @@ void nqueen(int k, int n) {
                 print_sol(n);
             else
                 nqueen(k + 1, n);
-            x[k] = -1; // Backtrack: Reset the position of the current queen.
+            x[k] = -1; 
         }
     }
 }
@@ -44,10 +44,10 @@ int main() {
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++) {
-        x[i] = -1; // Initialize the column positions of queens.
+        x[i] = -1; 
     }
 
-    nqueen(1, n); // Start the N-Queens problem with a call to nqueen(1, n).
+    nqueen(1, n); 
 
     printf("\nTotal solutions = %d\n", count);
     return 0;
